@@ -2,7 +2,7 @@ package pres.hjc.cloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * Created by IntelliJ IDEA.
@@ -11,17 +11,13 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @version 1.0
  * To change this template use File | Settings | File Templates.
  * @date 2020/4/23
- * @time 15:34
+ * @time 16:47
  */
-/** 自动注册到eureka */
 @SpringBootApplication
-@EnableEurekaClient
-public class Provider8001Application {
+@EnableEurekaServer
+public class Eureka7001Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Provider8001Application.class,args);
+        SpringApplication.run(Eureka7001Application.class,args);
     }
 }
-
-
-

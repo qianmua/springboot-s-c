@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-consumer-dept-9001" />
         <module name="cloud-provider-dept-8001" />
+        <module name="cloud-eureka-7001" />
         <module name="cloudapi" />
       </profile>
     </annotationProcessing>

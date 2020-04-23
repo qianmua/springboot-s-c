@@ -52,3 +52,10 @@ spring:
         login-username: guest
         # 登录密码
         login-password: guest
+
+
+# eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
