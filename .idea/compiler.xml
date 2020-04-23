@@ -7,12 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-provider-dept-8001" />
-        <module name="cloud-eureka-7001" />
-        <module name="cloud-consumer-dept-9001" />
         <module name="cloudapi" />
-        <module name="cloud-eureka-7002" />
-        <module name="cloud-eureka-7003" />
+        <module name="cloudproviderdept8002" />
+        <module name="cloud-provider-dept-8002" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-consumer-dept-9001" target="1.8" />
+      <module name="cloud-eureka-7001" target="1.8" />
+      <module name="cloud-eureka-7002" target="1.8" />
+      <module name="cloud-eureka-7003" target="1.8" />
+      <module name="cloudproviderdept8002" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
