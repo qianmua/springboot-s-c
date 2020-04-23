@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloudpres" />
+        <module name="cloud-provider-dept-8001" />
+        <module name="cloudapi" />
       </profile>
     </annotationProcessing>
   </component>
