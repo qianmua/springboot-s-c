@@ -1,7 +1,6 @@
 package pres.hjc.cloud.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,11 +16,10 @@ import java.util.List;
  * @version 1.0
  * To change this template use File | Settings | File Templates.
  * @date 2020/4/23
- * @time 16:07
+ * @time 19:12
  */
 @RestController
 public class DeptConsumerController {
-
 
     /**
      * 提供边界访问远程服务的方法，简单的restful风格模板
