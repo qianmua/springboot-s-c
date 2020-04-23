@@ -53,9 +53,15 @@ spring:
         # 登录密码
         login-password: guest
 
-
 # eureka
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka/
+      #注册中心集群
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
+  instance:
+    instance-id: cloud-provider-dept-8001 # 注册中心默认配置信息
+
+#info
+#info:
+#  app.name: s-c-demo
