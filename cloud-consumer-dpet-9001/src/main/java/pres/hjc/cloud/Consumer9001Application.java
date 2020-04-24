@@ -16,7 +16,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients( basePackages = {"pres.hjc.cloud"})
+@EnableFeignClients( basePackages = {"pres.hjc.cloud.service"})
 public class Consumer9001Application {
 
     public static void main(String[] args) {
