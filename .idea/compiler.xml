@@ -12,6 +12,7 @@
         <module name="cloud-consumer-dept-9002" />
         <module name="cloud-eureka-7003" />
         <module name="cloud-consumer-dpet-9001" />
+        <module name="cloud-consumer-hystrix-dashboard" />
         <module name="cloudapi" />
         <module name="cloudproviderdept8002" />
         <module name="cloud-provider-hystrix-dept-8001" />

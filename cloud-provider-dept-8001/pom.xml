@@ -12,6 +12,20 @@
     <artifactId>cloud-provider-dept-8001</artifactId>
 
     <dependencies>
+
+        <!--服务监控-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!--hystrix-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+            <version>1.4.6.RELEASE</version>
+        </dependency>
+
         <dependency>
             <groupId>pres.hjc</groupId>
             <artifactId>cloud-api</artifactId>
