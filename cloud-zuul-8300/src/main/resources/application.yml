@@ -1,0 +1,19 @@
+server:
+  port: 8300
+
+spring:
+  application:
+    name: cloud-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
+  instance:
+    instance-id: zuul-8300
+    prefer-ip-address: true
+zuul:
+  routes:
+    dept.serviceId: springcloud-provider-dept
+    dept.path: /dept/**
+  ignored-services: "*" # 忽略 配置网关
+#  prefix: /test # 访问前缀
