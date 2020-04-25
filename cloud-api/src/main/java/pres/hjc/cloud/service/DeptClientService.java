@@ -18,7 +18,7 @@ import java.util.List;
  * @time 19:14
  */
 @Component
-@FeignClient( value = "SPRINGCLOUD-PROVIDER-DEPT")
+@FeignClient( value = "SPRINGCLOUD-PROVIDER-DEPT" , fallbackFactory = DeptClientServiceFall.class)
 public interface DeptClientService {
 
     /**

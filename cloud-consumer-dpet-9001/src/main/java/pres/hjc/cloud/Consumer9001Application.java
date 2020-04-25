@@ -14,6 +14,11 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @date 2020/4/24
  * @time 19:10
  */
+
+/**
+ * 服务熔断 : 服务端 - > 熔断机制
+ * 服务降级 : 客户端  - > 返回缺省值
+ */
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients( basePackages = {"pres.hjc.cloud.service"})
