@@ -32,9 +32,10 @@ public class DeptController {
     @GetMapping("/hystrix/get/{id}")
     public Dept getById(@PathVariable("id") long id){
         Dept dept = service.queryById(id);
-        if (dept == null){{
+        if (dept == null){
+            // 异常用hystrix捕获抛出
             throw new RuntimeException("null");
-        }}
+        }
         return dept;
     }
 
