@@ -17,8 +17,8 @@ import java.io.Serializable;
  */
 @Data
 //@NoArgsConstructor
-//@Accessors( chain = true)
-
+//链式编程
+@Accessors( chain = true)
 public class Dept implements Serializable {
 
     private long deptNo;
