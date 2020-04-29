@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-consumer-dpet-9001" />
         <module name="cloud-zuul-8300" />
+        <module name="cloud-eureka-config-7001" />
         <module name="cloud-config-client-9501" />
         <module name="cloud-eureka-7003" />
         <module name="cloud-eureka-7002" />

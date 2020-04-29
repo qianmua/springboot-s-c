@@ -21,6 +21,7 @@
         <module>cloud-zuul-8300</module>
         <module>cloud-config-9500</module>
         <module>cloud-config-client-9501</module>
+        <module>cloud-eureka-config-7001</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: cloud-eureka-config-7001
