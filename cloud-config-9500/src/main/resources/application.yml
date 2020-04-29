@@ -1,0 +1,18 @@
+
+# 连接时直接访问端口 + application就行了。
+
+server:
+  port: 9500
+spring:
+  application:
+    name: cloud-config-9500
+
+  # git
+  cloud:
+    config:
+      server:
+        git:
+          # https的地址
+          uri: https://****
+
+ # --- 多文档模块配置

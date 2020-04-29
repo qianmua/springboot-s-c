@@ -1,0 +1,15 @@
+
+
+# 系统级别的配置
+# application 用户级别配置
+# 中专
+spring:
+  cloud:
+    config:
+      uri: http://localhost:3344
+      # git 上面的配置文件名，不加后缀哦
+      name: config-client
+      # 节点
+      label: master
+      # 配置l
+      profile: dev

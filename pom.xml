@@ -19,6 +19,8 @@
         <module>cloud-provider-hystrix-dept-8001</module>
         <module>cloud-consumer-hystrix-dashboard</module>
         <module>cloud-zuul-8300</module>
+        <module>cloud-config-9500</module>
+        <module>cloud-config-client-9501</module>
     </modules>
     <packaging>pom</packaging>
 
