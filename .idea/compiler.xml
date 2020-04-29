@@ -17,6 +17,7 @@
         <module name="cloud-config-9500" />
         <module name="cloudapi" />
         <module name="cloud-provider-hystrix-dept-8001" />
+        <module name="cloud-provider-dept-config-8001" />
         <module name="cloud-provider-dept-8002" />
         <module name="cloud-consumer-dept-9002" />
         <module name="cloud-consumer-hystrix-dashboard" />

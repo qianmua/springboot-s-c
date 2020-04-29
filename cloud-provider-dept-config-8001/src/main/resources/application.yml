@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: cloud-provider-dept-config-8001

@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: config_file/config-provider-dept8001
+      label: master
+      profile: dev
+      uri: http://localhost:9500
