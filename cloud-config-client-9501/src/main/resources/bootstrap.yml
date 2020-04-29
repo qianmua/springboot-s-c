@@ -6,10 +6,10 @@
 spring:
   cloud:
     config:
-      uri: http://localhost:3344
       # git 上面的配置文件名，不加后缀哦
-      name: config-client
-      # 节点
-      label: master
+      name: config_file/application
       # 配置l
       profile: dev
+      # 节点
+      label: master
+      uri: http://localhost:9500

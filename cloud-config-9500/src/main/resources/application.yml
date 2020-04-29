@@ -13,6 +13,6 @@ spring:
       server:
         git:
           # https的地址
-          uri: https://****
+          uri: https://github.com/qianmua/springboot-s-c.git
 
  # --- 多文档模块配置
