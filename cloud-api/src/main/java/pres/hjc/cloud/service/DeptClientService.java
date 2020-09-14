@@ -4,6 +4,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import pres.hjc.cloud.pojo.Dept;
 
 import java.util.List;
@@ -26,14 +27,14 @@ public interface DeptClientService {
      * @param id
      * @return
      */
-    @GetMapping("feign/get/{id}")
+    @RequestMapping("feign/get/{id}")
     Dept queryById(@PathVariable("id") long id);
 
     /**
      * query all
      * @return
      */
-    @GetMapping("feign/queryAll")
+    @RequestMapping("feign/queryAll")
     List<Dept> queryAll();
 
     /**
@@ -41,6 +42,6 @@ public interface DeptClientService {
      * @param dept
      * @return
      */
-    @GetMapping("feign/add")
+    @RequestMapping("feign/add")
     boolean add(Dept dept);
 }

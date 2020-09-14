@@ -10,6 +10,7 @@ import org.springframework.web.client.RestTemplate;
 import pres.hjc.cloud.pojo.Dept;
 import pres.hjc.cloud.service.DeptClientService;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -27,22 +28,21 @@ public class DeptConsumerController {
     /**
      * 指示器
      */
-    @Qualifier("deptClientService")
     @Autowired
-    private DeptClientService clientService;
+    private DeptClientService deptClientService;
 
     @RequestMapping("/consumer/dept/add")
     public boolean add(Dept dept){
-        return this.clientService.add(dept);
+        return this.deptClientService.add(dept);
     }
 
     @RequestMapping("/consumer/dept/get/{id}")
     public Dept dept(@PathVariable("id") long id){
-        return this.clientService.queryById(id);
+        return this.deptClientService.queryById(id);
     }
 
     @RequestMapping("/consumer/dept/all")
     public List<Dept> queryAll(){
-        return this.clientService.queryAll();
+        return this.deptClientService.queryAll();
     }
 }
